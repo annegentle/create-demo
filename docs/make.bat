@@ -13,6 +13,9 @@ set BUILDDIR=build
 if "%1" == "" goto help
 
 %SPHINXBUILD% >NUL 2>NUL
+
+copy /Y %BUILDDIR%/html/*.* ..
+
 if errorlevel 9009 (
 	echo.
 	echo.The 'sphinx-build' command was not found. Make sure you have Sphinx
@@ -30,11 +33,6 @@ goto end
 
 :help
 %SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
-
-:github
-%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
-copy /Y build\html\*.* ..\docs
-goto end
 
 :end
 popd
