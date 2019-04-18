@@ -31,5 +31,10 @@ goto end
 :help
 %SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
 
+:github
+%SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
+copy /Y build\html\*.* ..\docs
+goto end
+
 :end
 popd
