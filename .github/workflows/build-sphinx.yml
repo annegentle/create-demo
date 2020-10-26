@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run build script
-        run: $GITHUB_ACTION_PATH/build-site.sh
+        run: $GITHUB_ACTION_PATH/buildsite.sh
         shell: bash
 
