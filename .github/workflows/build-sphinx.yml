@@ -1,5 +1,4 @@
 name: build-sphinx-to-gh-pages
-description: Build Sphinx to GitHub Pages
 on: 
   push:
     branches: [ main ]
