@@ -10,7 +10,17 @@ jobs:
   build_sphinx_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Run build script
-        run: docs/buildsite.sh
+      - name: Get prerequisites
+        env:
+          GITHUB_TOKEN: ${{ secrets.CREATE_DEMO_SECRET }}
+        run:
+          apt-get update
+          apt-get install -y git
+          git clone --depth 1 "https://token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" .
+        shell: bash
+      - name: Run build script for Sphinx pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.CREATE_DEMO_SECRET }}
+        run: "docs/buildsite.sh"
         shell: bash
 
