@@ -3,7 +3,6 @@ env:
   GITHUB_ACTOR: annegentle
   GITHUB_REPOSITORY: annegentle/create-demo
   GITHUB_TOKEN: ${{ secrets.CREATE_DEMO_SECRET }}
-  GITHUB_ACTION_PATH: scripts
 on: 
   push:
     branches: [ main ]
@@ -12,6 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run build script
-        run: $GITHUB_ACTION_PATH/buildsite.sh
+        run: docs/buildsite.sh
         shell: bash
 
