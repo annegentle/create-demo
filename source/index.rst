@@ -12,8 +12,8 @@ Welcome to DevNet Create Demo's documentation!
 
    This demo is for the 2019 DevNet Create talk, "Make an Instant Web Site with WebHooks."
  
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/vM4vw2L-mG0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+   You can read more about building with GitHub Pages and treating docs as code and
+   static site generators on the `Docs Like Code web site <https://docslikecode.com>`_.
 
 Indices and tables
 ==================
