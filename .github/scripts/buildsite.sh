@@ -13,13 +13,14 @@ export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)
  
 # Python Sphinx, configured with docs/conf.py
 # See https://www.sphinx-doc.org/
+cd source 
 make -C docs clean
 make -C docs html
 
 #######################
 # Update GitHub Pages #
 #######################
- 
+
 git config --global user.name "${GITHUB_ACTOR}"
 git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
  
