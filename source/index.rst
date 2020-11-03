@@ -6,10 +6,6 @@
 Welcome to the DevNet Create Demo!
 ==================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Table of Contents:
-
    This demo is for the 2019 DevNet Create talk, "Make an Instant Web Site with WebHooks." 
    To read more about how this demo is put together, refer to Yes You Can Use GitHub Pages with Python Sphinx_. 
    
