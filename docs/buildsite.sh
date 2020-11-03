@@ -11,9 +11,8 @@ export SOURCE_DATE_EPOCH=$(git log -1 --pretty=%ct)
 # BUILD DOCS #
 ##############
  
-# Python Sphinx, configured with docs/conf.py
+# Python Sphinx, configured with source/conf.py
 # See https://www.sphinx-doc.org/
-cd source 
 make -C docs clean
 make -C docs html
 
