@@ -1,4 +1,9 @@
 name: build-sphinx-to-gh-pages
+env:
+  GITHUB_ACTOR: annegentle
+  GITHUB_REPOSITORY: annegentle/create-demo
+  GITHUB_TOKEN: ${{ secrets.CREATE_DEMO_SECRET }}
+  GITHUB_ACTION_PATH: ./scripts
 on: 
   push:
     branches: [ main ]
