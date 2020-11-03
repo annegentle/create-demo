@@ -19,8 +19,8 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'DevNet Create Demo'
-copyright = '2019, Anne Gentle'
+project = 'DevNet Create GitHub Pages Demo'
+copyright = '2020, Anne Gentle'
 author = 'Anne Gentle'
 
 # The short X.Y version
@@ -151,7 +151,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, 'DevNetCreateDemo', 'DevNet Create Demo Documentation',
-     author, 'DevNetCreateDemo', 'One line description of project.',
+     author, 'DevNetCreateDemo', 'For DevNet Create 2019, this demonstrated building using GitHub Pages with Sphinx.',
      'Miscellaneous'),
 ]
 

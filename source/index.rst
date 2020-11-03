@@ -10,8 +10,12 @@ Welcome to DevNet Create Demo's documentation!
    :maxdepth: 2
    :caption: Table of Contents:
 
-   This demo is for the 2019 DevNet Create talk, "Make an Instant Web Site with WebHooks." To read more about how it's put together, refer to `Yes You Can Use GitHub Pages with Python Sphinx <https://www.docslikecode.com/articles/github-pages-python-sphinx/>`_.
+   This demo is for the 2019 DevNet Create talk, "Make an Instant Web Site with WebHooks." 
+   To read more about how it's put together, refer to `Yes You Can Use GitHub Pages with Python Sphinx <https://www.docslikecode.com/articles/github-pages-python-sphinx/>`_.
  
+   You can read more about building with GitHub Pages, treating docs as code, and
+   static site generators on the `Docs Like Code web site <https://docslikecode.com>`_.
+
 Indices and tables
 ==================
 
