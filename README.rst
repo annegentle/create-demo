@@ -26,3 +26,5 @@ To build HTML locally::
 
 The build for GitHub is only used by the GitHub Action. It which makes the HTML static files and uses the GitHub Actions environment variables including the Secrets storage. 
     `$ make github`
+
+> Note: When the personal access token format changed, I had to update the Secret in the GitHub Actions settings so that the build would work again.
