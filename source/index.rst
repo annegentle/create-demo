@@ -11,6 +11,8 @@ Welcome to the DevNet Create Demo!
    
    You can read more about building with GitHub Pages, treating docs as code, and
    static site generators on the `Docs Like Code web site <https://docslikecode.com>`_.
+   
+   There's a series of tutorials at https://docslikecode.com/learn/. Enjoy!
 
 Indices and tables
 ==================
