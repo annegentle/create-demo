@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'DevNet Create GitHub Pages Demo'
-copyright = '2020, Anne Gentle'
+copyright = '2022, Anne Gentle'
 author = 'Anne Gentle'
 
 # The short X.Y version
