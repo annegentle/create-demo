@@ -14,6 +14,7 @@ The magic parts for GitHub Pages builds are:
 
  * Having the docs source files in a /docs folder.
  * Adding an empty `.nojekyll` file in the root of the /docs folder.
+ * Having a script that builds the static files for the GitHub Action to run. 
  * Adding a new target to the `Makefile` and `make.bat` file::
 
     github:
@@ -23,5 +24,5 @@ The magic parts for GitHub Pages builds are:
 To build HTML locally::
     $ make html
 
-To build for GitHub::
-    $ make github
+The build for GitHub is only used by the GitHub Action. It which makes the HTML static files and uses the GitHub Actions environment variables including the Secrets storage. 
+    `$ make github`
