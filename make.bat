@@ -25,11 +25,21 @@ if errorlevel 9009 (
 	exit /b 1
 )
 
+if "%1" == "github" goto github
+
 %SPHINXBUILD% -M %1 %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
 goto end
 
 :help
 %SPHINXBUILD% -M help %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
+goto end
+
+REM Windows equivalent of the Makefile "github" target:
+REM build HTML, then copy build\html into the docs folder for GitHub Pages.
+:github
+%SPHINXBUILD% -M html %SOURCEDIR% %BUILDDIR% %SPHINXOPTS%
+if errorlevel 1 goto end
+xcopy /E /H /I /Y /Q "%BUILDDIR%\html" "docs"
 
 :end
 popd
